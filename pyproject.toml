@@ -17,12 +17,14 @@ black = "^23.3.0"
 ruff = "^0.0.270"
 pre-commit = "^3.3.2"
 
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry.scripts]
+calc = "calc.__main__:app"
 
-# pyproject.toml
 [tool.pytest.ini_options]
 addopts = "-vv"
 testpaths = [
